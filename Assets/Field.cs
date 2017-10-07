@@ -8,17 +8,30 @@ public class Field
     
     public void Initialize()
     {
-        int w = 10;
-        int h = 10;
+        int w = 5;
+        int h = 5;
 
-        for (int i = 0; i < w * h; ++i)
-        {
-
-        }
+        TileList = GenerateTile(w, h);
     }
 
-    public void GenerateTile(int w, int h, List<Tile> tileList)
+    public List<Tile> GenerateTile(int w, int h)
     {
+        var fieldRoot = new GameObject();
+        fieldRoot.transform.SetParent(Root3D.Instance);
+        fieldRoot.transform.localPosition = new Vector3(w * -5, 0, h * -5);
+        fieldRoot.transform.localRotation = Quaternion.identity;
+        fieldRoot.transform.localScale = Vector3.one;
 
+        var ret = new List<Tile>();
+
+        for (int y = 0; y < h; ++y)
+        {
+            for (int x = 0; x < w; ++x)
+            {
+                ret.Add(Tile.CreateInstance(x, y, fieldRoot.transform));
+            }
+        }
+
+        return ret;
     }
 }

@@ -10,12 +10,24 @@ public abstract class ClickController<Data, Controller> : MonoBehaviour
     protected Data data = null;
     protected Action<Data, Controller> onClick = null;
 
-    public void SetData(Data data, Action<Data, Controller> onClick)
+    public void SetData(Data data, Action<Data, Controller> onClick = null)
     {
         this.data = data;
         this.onClick = onClick;
+        OnSetData();
     }
 
+    public void UpdateData(Data data)
+    {
+        this.data = data;
+        OnSetData();
+    }
+
+    public void SetClickAction(Action<Data, Controller> onClick)
+    {
+        this.onClick = onClick;
+    }
+    
     public void InvalidData()
     {
         OnSetData();

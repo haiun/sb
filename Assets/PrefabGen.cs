@@ -28,7 +28,6 @@ public class PrefabGen<T> where T : class
             if (prefab == null) continue;
 
             var instance = GameObject.Instantiate(prefab) as GameObject;
-            Resources.UnloadAsset(prefab);
             if (instance == null) continue;
 
             return instance.GetComponent<T>();

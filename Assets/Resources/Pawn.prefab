@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4408115359374118}
   - component: {fileID: 114224131518961178}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 136503916990492406}
   - component: {fileID: 23007384780619618}
   - component: {fileID: 114929495779594686}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1202140506862222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 700}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 360, y: 360, z: 360}
   m_Children:
   - {fileID: 4287515871795628}
