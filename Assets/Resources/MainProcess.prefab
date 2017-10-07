@@ -51,5 +51,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6250b13b5fec09049a6294d25ccdddec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TileDebugObject: {fileID: 1020173381041366, guid: 169648d6a2b52a244b267132c9eb6315,
-    type: 2}
+  field: {fileID: 0}

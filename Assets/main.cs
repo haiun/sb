@@ -6,11 +6,11 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
-    Field field = new Field();
+    [SerializeField]
+    public Field field = null;
 
     void Start()
     {
-        
         field.Initialize();
     }
 }
